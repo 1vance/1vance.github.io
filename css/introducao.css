@@ -9,19 +9,18 @@
 }
 
 .introducao h1 {
-  font-weight: 900;
   font-size: 4.5rem;
   line-height: 1.125;
   margin-bottom: 30px;
-  position: relative
+  position: relative;
 }
 
 .introducao h1::before {
   content: "";
-  height: 100px;
-  width: 130px;
   display: block;
-  background: url('../img/detalhe.svg') no-repeat center;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
   top: -15px;
   left: -40px;
@@ -36,12 +35,6 @@
 @media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
-  }
-  .introducao h1::before {
-    width: 70px;
-    height: 10px;
-    top: -25px;
-    left: 0px;
   }
 }
 
@@ -60,10 +53,9 @@
   }
 }
 
-@media (max-width: 412px){
+@media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;
-    padding-left: 60px
   }
   .introducao img {
     display: none;
